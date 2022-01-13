@@ -10,7 +10,7 @@ import message from "./icons/email_white.png"
 import contacts from "./icons/notebook-of-contacts_white.png"
 import impuls from "./images/impuls.png"
 import logo from "./images/DHZB_Logo.png"
-import login from "./login/login";
+import Login from "./login/login";
 
 let task = [
             {
@@ -49,18 +49,19 @@ function App() {
     return (
         <div className="main">
             <div className="header">
-                <img src={impuls} alt="Impuls"/>
+                <img className="impuls" src={impuls} alt="Impuls"/>
                 <label for="languages"></label>
                 <select name="language" id="languages" className="language-container">
-                    <option value="german">german</option>
+                    <option value="german">germany</option>
                     <option value="english">english</option>
                     <option value="russian">russian</option>
                     <option value="arabic">arabic</option>
                     <option value="turkey">turkey</option>
                 </select>
-                <img src={logo} alt="Logo"/>
+                <img className="image" src={logo} alt="Logo"/>
+                <p>Willkommen</p>
+                <Login></Login>
             </div>
-            <login></login>
         </div>
     )
 }

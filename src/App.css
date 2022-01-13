@@ -13,6 +13,7 @@
 }
 
 .main {
+  font-family: Arial, sans-serif;
 }
 
 .menu_button {
@@ -61,10 +62,38 @@
 }
 
 .language-container {
-  position: relative;
-  right: 0;
-  width: 60px;
+  position: fixed;
+  left: 78%;
+  top: 4%;
+  width: 73px;
   border: solid black 1px;
   border-radius: 5px;
-  height: 30px;
+  height: 29px;
+}
+
+.image {
+  width: 62%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 12vh;
+}
+
+.impuls {
+  width: 100%;
+  height: 1%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+p {
+  position: relative;
+  top: 16vh;
+  font-size: 2rem;
+}
+
+.icon {
+  width: 5px;
+  height: 5px;
 }

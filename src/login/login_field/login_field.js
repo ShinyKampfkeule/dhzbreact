@@ -1,16 +1,7 @@
-function Login_Field() {
+function LoginField() {
     return(
-        <form>
-            <label>
-                Nutzername:
-                <input type="text">Add Text</input>
-            </label>
-            <label>
-                Passwort
-                <input type="text">Add Text</input>
-            </label>
-        </form>
+        <div>Hello</div>
     )
 }
 
-export default Login_Field
+export default LoginField
