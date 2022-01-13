@@ -1,6 +1,6 @@
 import Login_Field from "./login_field/login_field";
 
-function Login() {
+function Login(Child) {
     return(
         <div>
             <p>Willkommen</p>
