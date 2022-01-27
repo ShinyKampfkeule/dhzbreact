@@ -1,3 +1,7 @@
+body {
+  font-family: "Bliss Pro";
+}
+
 .tab {
   width: 45px;
   height: 45px;
@@ -10,10 +14,6 @@
   position: fixed;
   bottom: 0;
   text-align: center;
-}
-
-.main {
-  font-family: Arial, sans-serif;
 }
 
 .menu_button {
@@ -63,8 +63,8 @@
 
 .language-container {
   position: fixed;
-  left: 78%;
-  top: 4%;
+  right: 6vw;
+  top: 3vh;
   width: 73px;
   border: solid black 1px;
   border-radius: 5px;
@@ -76,7 +76,7 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  top: 12vh;
+  top: 10vh;
 }
 
 .impuls {
@@ -87,13 +87,169 @@
   left: 0;
 }
 
-p {
+.topic {
   position: relative;
   top: 16vh;
   font-size: 2rem;
+  text-align: center;
+  line-height: 0.5rem;
 }
 
 .icon {
   width: 5px;
   height: 5px;
+}
+
+.loginField {
+  background-color: rgba(130, 210, 240,0.25);
+  width: 82%;
+  height: 260px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  top: 16vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.abstand {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hinweisText {
+  text-align: center;
+  color: rgb(171, 171, 171);
+  position: fixed;
+  top: 85vh;
+  left: 20vw;
+  font-size: 0.8rem;
+}
+
+.greenLine {
+  background-color: rgb(110, 170, 30);
+  width: 100%;
+  height: 1vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  background-color: rgba(0, 110, 185);
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 82%;
+  height: 5.9vh;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 19vh;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.16);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.label {
+  display: block;
+  text-align: left;
+  margin-left: 28vw;
+  font-size: 1.1rem;
+}
+
+.input {
+  margin-top: 0.3vh;
+  margin-left: 27vw;
+  width: 64vw;
+  height: 5.2vh;
+  border: none;
+  border-radius: 5px;
+  padding-left: 13px;
+  font-size: 1rem;
+}
+
+.input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.password {
+  margin-top: 3vh;
+}
+
+.full {
+  width: 80%;
+}
+
+.eye {
+  width: 6vw;
+  height: 3vh;
+}
+
+.eyeContainer {
+  position: relative;
+  right: 28vw;
+  top: 13vh;
+  width: 30px;
+  margin: 0;
+}
+
+.ErrorContainer {
+  position: relative;
+  top: 19vh;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #ff0000;
+}
+
+.bigBlueButton {
+  background-color: rgba(0, 110, 185);
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 38.5vw;
+  height: 35vw;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 15vh;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.16);
+  margin-bottom: 2vh;
+}
+
+.topic_dash {
+  position: relative;
+  top: 12vh;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 0.5rem;
+}
+
+.btnText {
+  display: block;
+  position: relative;
+  top: 2vh;
+  font-size: 1rem;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+}
+
+.pwForgotten {
+  position: relative;
+  top: 12.5vh;
+  right: 38vw;
+}
+
+.pw {
+  width: 50vw;
+  color: rgb(126, 126, 126);
 }
