@@ -1,6 +1,6 @@
-function TaskList({children}) {
+function TaskList({tasks}) {
     return(
-        <div>{children}</div>
+        <div>Tasks</div>
     )
 }
 

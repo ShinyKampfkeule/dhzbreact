@@ -1,7 +1,9 @@
 import {Formik, Field, Form} from "formik"
 import {useNavigate} from "react-router-dom";
-import eye from "../../icons/eye.png"
-import blind from "../../icons/blind.png"
+import eye from "../../icons/eye.png";
+import blind from "../../icons/blind.png";
+
+const crypto = require('crypto')
 
 function Login() {
     const navigate = useNavigate();
@@ -13,7 +15,19 @@ function Login() {
                     password: ''
                 }}
                 onSubmit={async (values) => {
-                    await fetch(`http://localhost:3001/?email=${values.email}&password=${values.password}`)
+                    let sha256 = crypto.createHash('sha256')
+                    let hashPassword = sha256.update(values.password).digest('base64');
+                    await fetch(`http://localhost:3001/`, {
+                        method: 'POST',
+                        headers: {
+                            Accept: 'application/json',
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            email: values.email,
+                            password: hashPassword,
+                        }),
+                    })
                         .then((response) => response.json())
                         .then((data) => {
                             let message = data.message
@@ -22,7 +36,11 @@ function Login() {
                                 error.innerText = message
                             } else {
                                 localStorage.setItem('token', data.token)
-                                navigate(`/home/${data.username}`)
+                                navigate(`/home`, {
+                                    state: {
+                                        username: data.username
+                                    }
+                                })
                             }
                         })
                 }}
@@ -39,7 +57,7 @@ function Login() {
                             <p className="pw">Passwort vergessen?</p>
                         </div>
                         <div className="eyeContainer" id="hide" onClick={changePasswordVisibility}>
-                            <img src={eye} className="eye" id="eye"/>
+                            <img src={eye} className="eye" id="eye" alt=""/>
                         </div>
                     </div>
                     <div className="flex">

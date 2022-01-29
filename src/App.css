@@ -2,63 +2,8 @@ body {
   font-family: "Bliss Pro";
 }
 
-.tab {
-  width: 45px;
-  height: 45px;
-}
-
-.menu {
-  background-color: rgb(110, 170, 30);
-  width: 100%;
-  height: 80px;
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-}
-
-.menu_button {
-  background-color: rgba(130, 210, 240, 0);
-  border: none;
-  margin-right: 15px;
-  margin-top: 15px;
-}
-
-.menu_button_lastElement {
-  background-color: rgba(130, 210, 240, 0);
-  border: none;
-  margin-top: 15px;
-}
-
 .header {
   text-align: center;
-}
-
-.checkbox {
-  border: 1px solid rgba(0, 0, 0, 1);
-  width: 20px;
-  height: 20px;
-  position: relative;
-  top: 15px;
-  left: 5px;
-}
-
-.task_text {
-  font-size: 1rem;
-  position: relative;
-  top: 11px;
-  left: 10px;
-}
-
-.task_container {
-  border: none;
-  background-color: rgba(130, 210, 240, 0.5);
-  border-radius: 15px;
-  font-size: 1rem;
-  width: 90%;
-  height: 60px;
-  margin-bottom: 20px;
-  position: relative;
-  left: 15px;
 }
 
 .language-container {
@@ -253,3 +198,85 @@ body {
   width: 50vw;
   color: rgb(126, 126, 126);
 }
+
+.topics {
+  position: relative;
+  top: 5vh;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 0.5rem;
+}
+
+.checkbox {
+  border: 1px solid rgba(0, 0, 0, 1);
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 20px;
+  left: 25px;
+}
+
+input[type="checkbox"]:disabled{
+  background-color: rgb(110, 170, 30);
+}
+
+.task_text {
+  font-size: 1.1rem;
+  position: relative;
+  top: 15px;
+  left: 40px;
+}
+
+.task_container {
+  border: none;
+  background-color: rgba(130, 210, 240, 0.25);
+  border-radius: 15px;
+  width: 83%;
+  height: 65px;
+  margin-bottom: 25px;
+  position: relative;
+  top: 12vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabIcon {
+  width: 78px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabIcon > img {
+  width: 41px;
+  height: 41px;
+}
+
+.menu {
+  background-color: rgb(110, 170, 30);
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.rightLine {
+  border-right: 1px solid rgba(258, 258, 258, 0.5);
+}
+
+/*.menu_button {*/
+/*  background-color: rgba(130, 210, 240, 0);*/
+/*  border: none;*/
+/*  margin-right: 15px;*/
+/*  margin-top: 15px;*/
+/*}*/
+
+/*.menu_button_lastElement {*/
+/*  background-color: rgba(130, 210, 240, 0);*/
+/*  border: none;*/
+/*  margin-top: 15px;*/
+/*}*/

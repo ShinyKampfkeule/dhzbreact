@@ -10,9 +10,9 @@ function LoginHeader() {
                 <select name="language" id="languages" className="language-container">
                     <option value="german">german</option>
                     <option value="english">english</option>
-                    <option value="russian">russian</option>
-                    <option value="arabic">arabic</option>
-                    <option value="turkey">turkey</option>
+                    <option value="russian">русский</option>
+                    <option value="arabic">عربى</option>
+                    <option value="turkey">türkçe</option>
                 </select>
                 <img className="image" src={logo} alt="Logo"/>
             </div>
