@@ -1,4 +1,4 @@
-import {Formik, Field, Form} from "formik"
+import {Formik, Field, Form} from "formik";
 import {useNavigate} from "react-router-dom";
 import eye from "../../icons/eye.png";
 import blind from "../../icons/blind.png";

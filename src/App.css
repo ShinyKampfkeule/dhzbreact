@@ -268,6 +268,33 @@ input[type="checkbox"]:disabled{
   border-right: 1px solid rgba(258, 258, 258, 0.5);
 }
 
+.Geschlecht {
+  background-color: red;
+}
+
+.Geburtsdatum {
+  background-color: lawngreen;
+}
+
+.Titel {
+  background-color: black;
+}
+
+.Vorname {
+  background-color: aliceblue;
+}
+
+.container {
+  background-color: rgba(130, 210, 240, 0.25);
+  width: 85%;
+  border: none;
+  border-radius: 20px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  top: 10vh;
+}
+
 /*.menu_button {*/
 /*  background-color: rgba(130, 210, 240, 0);*/
 /*  border: none;*/

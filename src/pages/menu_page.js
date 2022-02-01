@@ -13,8 +13,8 @@ function MenuPage() {
     const {username} = state
     return(
         <>
-            <Header username={username} />
-            <DoubleBigButton icon1={user} icon2={file} title1="Mitarbeiterprofil" title2="Aufgaben" url1="profile" url2="tasks" />
+            <Header username={username} topic="Willkommen" klasse={header}/>
+            <DoubleBigButton icon1={user} icon2={file} title1="Mitarbeiterprofil" title2="Aufgaben" url1="profil" url2="tasks" />
             <DoubleBigButton icon1={upload} icon2={calendar} title1="Dokumente" title2="Kalender"  url1="documents" url2="calendar" />
             <DoubleBigButton icon1={letter} icon2={contacts} title1="Nachrichten" title2="Kontakte" url1="messages" url2="contacts" />
             <div className="greenLine" />

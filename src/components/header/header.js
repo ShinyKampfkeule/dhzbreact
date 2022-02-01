@@ -1,15 +1,15 @@
 import impuls from "../../images/impuls.png";
 import logo from "../../images/DHZB_Logo.png";
 
-function Header({username}) {
+function Header({topic, username, klasse}) {
 
     return(
         <>
-            <div className="header">
+            <div className={klasse}>
                 <img className="impuls" src={impuls} alt="Impuls"/>
-                <img className="image" src={logo} alt="Logo" />
+                {/*<img className="image" src={logo} alt="Logo" />*/}
             </div>
-            <p className="topic_dash">Willkommen</p>
+            <p className="topic_dash">{topic}</p>
             <p className="topic_dash">{username}</p>
         </>
     )
