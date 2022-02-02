@@ -1,23 +1,26 @@
-import {useLocation} from "react-router-dom";
-import Input_Area from "../input_area/input_area";
-import {InferType} from "yup";
+import InputArea from "../input_area/input_area";
+import SelectArea from "../select_area/select_area";
 
 function Formular() {
     return(
         <div className="container">
-            <Input_Area text="Geschlecht" />
-            <Input_Area text="Geburtsdatum" />
-            <Input_Area text="Titel" />
-            <Input_Area text="Vorname" />
-            <Input_Area text="Nachname" />
-            <Input_Area text="Straße" />
-            <Input_Area text="Nr." />
-            <Input_Area text="Stadt" />
-            <Input_Area text="PLZ" />
-            <Input_Area text="E-Mail" />
-            <Input_Area text="Telefonnummer" />
-            <Input_Area text="Position" />
-            <Input_Area text="Abteilung" />
+            <div className="everyElement">
+                <SelectArea text="Geschlecht" values={["männlich", "weiblich", "divers"]}/>
+                <InputArea text="Geburtsdatum" />
+                <div className="horizontalLine" />
+                <InputArea text="Titel" />
+                <InputArea text="Vorname" />
+                <div className="horizontalLine2" />
+                <InputArea text="Nachname" />
+                <div className="horizontalLine3" />
+                <InputArea text="Straße" />
+                <InputArea text="Nr." />
+                <div className="horizontalLine4" />
+                <InputArea text="Stadt" />
+                <InputArea text="PLZ" />
+                <div className="horizontalLine5" />
+                <InputArea text="Telefonnummer" />
+            </div>
         </div>
     )
 }

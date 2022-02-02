@@ -1,7 +1,7 @@
 import Tasks from "../components/task_list/tasks/tasks";
 import Menu from "../components/menu/menu";
 import {useEffect, useState} from "react";
-import PagesHeader from "../components/pages_header/pages_header";
+import Header from "../components/header/header";
 
 function TaskPage() {
 
@@ -29,11 +29,11 @@ function TaskPage() {
 
     return (
         <>
-            <PagesHeader topic="Aufgaben" />
+            <Header topic="Aufgaben" />
             {tasks.length > 0
                 ? tasks.map(e => {return <Tasks text={e.title} checked={e.status} key={e.title}/>})
             :null}
-            <Menu />
+            <Menu active="tasks" />
         </>
     )
 }

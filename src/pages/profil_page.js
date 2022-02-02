@@ -2,15 +2,18 @@ import Header from "../components/header/header";
 import Menu from "../components/menu/menu";
 import DoubleLongButton from "../components/doubleLongButton/doubleLongButton";
 import Formular from "../components/formular/formular";
-import {useLocation} from "react-router-dom";
+import rightArrow from "../icons/right-arrow.png";
+import leftArrow from "../icons/left-arrow.png"
 
 function ProfilPage() {
     return(
         <>
-            <Header topic="Mitarbeiterprofil" klasse="profil"/>
+            <Header topic="Mitarbeiterprofil" klasse="topics"/>
             <Formular />
-            <DoubleLongButton />
-            <Menu />
+            <img src={rightArrow} className="rightArrow" alt="" />
+            <img src={leftArrow} className="leftArrow" alt="" />
+            {/*<DoubleLongButton />*/}
+            <Menu active="profil" />
         </>
     )
 }

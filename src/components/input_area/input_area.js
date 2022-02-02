@@ -1,7 +1,33 @@
-import {useLocation} from "react-router-dom";
 import {Formik, Field, Form} from "formik";
+import {useEffect, useState} from "react";
 
-function Input_Area({text}) {
+function InputArea({text}) {
+
+    useEffect(() => {
+        (async () => {
+            if (text === "Nr.") {
+                classname(
+                    <>
+                        <Form>
+                            <label className="NrLabel">{text}</label>
+                            <Field className="Nr" id="Nr" name="Nr" placeholder={text} />
+                        </Form>
+                    </>
+                )
+            } else {
+                let newClass = text + "Label"
+                classname(
+                    <Form>
+                        <label className={newClass}>{text}</label>
+                        <Field className={text} id={text} name={text} placeholder={text} />
+                    </Form>
+                )
+            }
+        })()
+    }, [text])
+
+    const [element, classname] = useState()
+
     return(
         <>
             <Formik
@@ -9,13 +35,10 @@ function Input_Area({text}) {
                     titel: ''
                 }}
             >
-                <Form>
-                    <label>{text}</label>
-                    <Field className={text} id={text} name={text} placeholder={text} />
-                </Form>
+                {element}
             </Formik>
         </>
     )
 }
 
-export default Input_Area
+export default InputArea
