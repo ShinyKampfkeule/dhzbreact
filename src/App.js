@@ -6,6 +6,7 @@ import LoginPage from "./pages/login_page";
 import MenuPage from "./pages/menu_page";
 import TaskPage from "./pages/task_page";
 import ProfilPage from "./pages/profil_page";
+import SchedulePage from "./pages/schedule_page";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
                 <Route path="/home" element={<MenuPage />} />
                 <Route path="/tasks" element={<TaskPage/>} />
                 <Route path="/profil" element={<ProfilPage/>} />
+                <Route path="/schedule" element={<SchedulePage/>} />
             </Routes>
         </BrowserRouter>
     )
