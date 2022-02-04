@@ -4,8 +4,18 @@ import DoubleLongButton from "../components/doubleLongButton/doubleLongButton";
 import Formular from "../components/formular/formular";
 import rightArrow from "../icons/right-arrow.png";
 import leftArrow from "../icons/left-arrow.png"
+import {useEffect, useState} from "react";
 
 function ProfilPage() {
+
+    useEffect(() => {
+        (async () => {
+
+        })()
+    },[])
+
+    const [tasks, setTasks] = useState([])
+
     return(
         <>
             <Header topic="Mitarbeiterprofil" klasse="topics"/>

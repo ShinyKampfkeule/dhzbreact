@@ -382,7 +382,7 @@ input[type="checkbox"]:disabled{
 
 .Vorname {
   position: relative;
-  top: 2.3vh;
+  top: 2.8vh;
   height: 5vh;
   width: 46%;
   left: 19vw;
@@ -390,7 +390,7 @@ input[type="checkbox"]:disabled{
 
 .VornameLabel {
   position: relative;
-  top: -1.7vh;
+  top: -1.2vh;
   left: 35.5vw;
 }
 
@@ -424,7 +424,7 @@ input[type="checkbox"]:disabled{
 
 .Nr {
   position: relative;
-  top: 6.4vh;
+  top: 6.6vh;
   height: 5vh;
   width: 20%;
   left: 49vw;
@@ -432,7 +432,7 @@ input[type="checkbox"]:disabled{
 
 .NrLabel {
   position: relative;
-  top: 2.5vh;
+  top: 2.7vh;
   left: 56vw;
 }
 
@@ -452,7 +452,7 @@ input[type="checkbox"]:disabled{
 
 .PLZ {
   position: relative;
-  top: 6.3vh;
+  top: 6.6vh;
   height: 5vh;
   width: 28%;
   left: 42vw;
@@ -460,7 +460,7 @@ input[type="checkbox"]:disabled{
 
 .PLZLabel {
   position: relative;
-  top: 2.3vh;
+  top: 2.6vh;
   left: 50vw;
 }
 
