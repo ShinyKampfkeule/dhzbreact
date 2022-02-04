@@ -17,6 +17,16 @@ function Header({topic, username, klasse}) {
                         <p className="topic_dash">{username}</p>
                     </>
                 )
+            } else if (klasse === "menu_header") {
+                showLogo(
+                    <>
+                        <div>
+                            <img className="impuls" src={impuls} alt="Impuls"/>
+                            <img className="menu_image" src={logo} alt="Logo" />
+                            <p className="topics"><b>{topic}</b></p>
+                        </div>
+                    </>
+                )
             } else {
                 showLogo(
                     <>
