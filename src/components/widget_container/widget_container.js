@@ -132,18 +132,20 @@ function WidgetContainer({topic, elements}) {
                     //
                     // }
 
+                    let dateArray1 = 'Platzhalter'
+
                     showContent(
                         <>
                             <div className="widget_schedule">
                                 <div className="widget_schedule_day">
-                                    <div className="widget_schedule_day_wday">{dateArray1[0]}</div>
-                                    <div className="widget_schedule_day_day">{dateArray1[2]}</div>
+                                    <div className="widget_schedule_day_wday">{dateArray1}</div>
+                                    <div className="widget_schedule_day_day">{dateArray1}</div>
                                 </div>
                                 <div className="widget_schedule_time_container">
                                     <div className="widget_schedule_timeline">
-                                        <p className="widget_schedule_timeline_time1">{dateArray1[4].slice(0, -3)}</p>
+                                        <p className="widget_schedule_timeline_time1">{dateArray1}</p>
                                         <p className="widget_schedule_timeline_time2">{hoursMidTimeline}:{minutesMidTimeline}</p>
-                                        <p className="widget_schedule_timeline_time3">{dateArray4[4].slice(0, -3)}</p>
+                                        <p className="widget_schedule_timeline_time3">{dateArray1}</p>
                                         <div className="widget_schedule_timeline_line" />
                                     </div>
                                     {elements.length > 0
@@ -172,7 +174,7 @@ function WidgetContainer({topic, elements}) {
                                             let dateArrayEnd = dateStringEnd.split(' ')
                                             console.log(dateArrayEnd)
 
-                                            return <Termin topic={`${e.title} - Raum ${e.room}`} time={`${dateArray1[4].slice(0, -3)} - ${dateArray2[4].slice(0, -3)} Uhr`} key={e.title} />
+                                            return <Termin topic={`${e.title} - Raum ${e.room}`} time={`${dateArrayStart[4].substring(0, dateArrayStart[4].length-3)} - ${dateArrayEnd[4].substring(0, dateArrayEnd[4].length-3)} Uhr`} key={e.title} />
                                         })
                                         :null}
                                 </div>
