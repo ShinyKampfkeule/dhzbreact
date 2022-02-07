@@ -69,7 +69,7 @@ body {
   color: rgb(171, 171, 171);
   position: fixed;
   top: 85vh;
-  left: 20vw;
+  left: 22vw;
   font-size: 0.8rem;
 }
 
@@ -130,6 +130,8 @@ body {
 
 .full {
   width: 80%;
+  position: relative;
+  bottom: 1vh;
 }
 
 .eye {
@@ -140,7 +142,7 @@ body {
 .eyeContainer {
   position: relative;
   right: 28vw;
-  top: 13vh;
+  top: 12vh;
   width: 30px;
   margin: 0;
 }
@@ -190,7 +192,7 @@ body {
 
 .pwForgotten {
   position: relative;
-  top: 12.5vh;
+  top: 11.5vh;
   right: 38vw;
 }
 
@@ -560,14 +562,218 @@ select {
   margin-right: auto;
   box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16), inset 0 3px 6px 0 rgba(0,0,0,0.16);
   border-radius: 5px;
+  top: 17vw;
+  margin-bottom: 1.5vh;
 }
 
-.menu_header {
+.menu_image {
   width: 62%;
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  top: 5vh;
+}
+
+.user_icon {
+  width: 53px;
+  height: 53px;
+}
+
+.user-table {
+  position: relative;
+  top: 6.5vh;
+  left: 6vw;
+}
+
+.user-name {
+  font-size: 1.5rem;
+}
+
+.spacer_w3 {
+  width: 3vw;
+}
+
+.widget_task_container {
+  overflow-y: scroll;
+  position: relative;
+  height: 16vh;
+  top: 1vh;
+}
+
+.widget_task_design {
+  border: none;
+  background-color: rgb(130, 210, 240);
+  border-radius: 5px;
+  width: 93%;
+  height: 39px;
+  margin-bottom: 10px;
+  position: relative;
+  top: 1vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.widget_task_checkbox {
+  border: 1px solid rgba(0, 0, 0, 1);
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+
+.widget_task_text {
+  font-size: 1.2rem;
+  position: relative;
+  top: 9px;
+  left: 20px;
+  color: rgb(0, 48, 79);
+}
+
+.widget_header {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  position: relative;
+  top: 1vh;
+  left: 1.5vh;
+}
+
+.widget_schedule {
+  background-color: rgb(176, 220, 118);
+  width: 93%;
+  height: 15.5vh;
+  border-radius: 5px;
+  position: relative;
+  top: 1.5vh;
+  left: 3vw;
+}
+
+.widget_schedule_day {
+  width: 15vw;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  top: 1vh;
+  left: 0.5vh;
+}
+
+.widget_schedule_day_wday {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  top: 10vh;
+  font-size: 1.2rem;
+  color: rgb(83, 83, 83);
+}
+
+.widget_schedule_day_day {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.6rem;
+  color: rgb(83, 83, 83);
+}
+
+.widget_schedule_time_container {
+  width: 69.5%;
+  height: 85%;
+  position: relative;
+  left: 19vw;
+  bottom: 5.8vh;
+}
+
+.widget_schedule_timeline_time1 {
+  font-size: 0.8rem;
+  color: rgb(129, 161, 87);
+}
+
+.widget_schedule_timeline_time2 {
+  font-size: 0.8rem;
+  color: rgb(129, 161, 87);
+  position: relative;
+  top: 2.5vh;
+}
+
+.widget_schedule_timeline_time3 {
+  font-size: 0.8rem;
+  color: rgb(129, 161, 87);
+  position: relative;
+  top: 5.5vh;
+}
+
+.widget_schedule_timeline_line {
+  height: 13vh;
+  width: 0.2vw;
+  background-color: rgb(129, 161, 87);
+  position: relative;
+  bottom: 9vh;
+  left: 8vw;
+}
+
+.widget_schedule_scheduled {
+  position: relative;
+  bottom: 21vh;
+  left: 10vw;
+  font-size: 1rem;
+  color: rgb(83, 83, 83);
+  margin-bottom: 2vh;
+}
+
+.message_container {
+  background-color: rgb(255, 255, 255);
+  width: 93%;
+  height: 5.7vh;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+  top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.message_container_user_icon {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  top: 1.5vh;
+  left: 2.5vw;
+}
+
+.message_container_user_sender {
+  width: 50vw;
+  position: relative;
+  bottom: 2vh;
+  left: 12vw;
+  font-size: 0.8rem;
+}
+
+.message_container_user_reference {
+  width: 50vw;
+  position: relative;
+  bottom: 2vh;
+  left: 12vw;
+  font-size: 0.8rem;
+}
+
+.message_container_user_date {
+  width: 20vw;
+  position: relative;
+  bottom: 6vh;
+  left: 58vw;
+  font-size: 0.8rem;
+}
+
+.message_container_user_warn_icon {
+  position: relative;
+  left: 77vw;
+  bottom: 6.5vh;
+}
+
+.message_container_overflow {
+  overflow-y: scroll;
+  position: relative;
+  height: 15vh;
+  top: 2vh;
 }
 
 /*.menu_button {*/

@@ -1,20 +1,10 @@
 import Header from "../components/header/header";
 import Menu from "../components/menu/menu";
-import DoubleLongButton from "../components/doubleLongButton/doubleLongButton";
 import Formular from "../components/formular/formular";
 import rightArrow from "../icons/right-arrow.png";
 import leftArrow from "../icons/left-arrow.png"
-import {useEffect, useState} from "react";
 
 function ProfilPage() {
-
-    useEffect(() => {
-        (async () => {
-
-        })()
-    },[])
-
-    const [tasks, setTasks] = useState([])
 
     return(
         <>
@@ -22,7 +12,6 @@ function ProfilPage() {
             <Formular />
             <img src={rightArrow} className="rightArrow" alt="" />
             <img src={leftArrow} className="leftArrow" alt="" />
-            {/*<DoubleLongButton />*/}
             <Menu active="profil" />
         </>
     )

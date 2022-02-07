@@ -23,7 +23,6 @@ function Header({topic, username, klasse}) {
                         <div>
                             <img className="impuls" src={impuls} alt="Impuls"/>
                             <img className="menu_image" src={logo} alt="Logo" />
-                            <p className="topics"><b>{topic}</b></p>
                         </div>
                     </>
                 )

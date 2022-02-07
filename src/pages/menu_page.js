@@ -1,40 +1,66 @@
 import Header from "../components/header/header"
-import DoubleBigButton from "../components/doubleBigButton/doubleBigButton"
-import user from "../icons/user.png"
-import file from "../icons/file.png"
-import upload from "../icons/upload.png"
-import calendar from "../icons/calendar.png"
-import letter from "../icons/letter.png"
-import contacts from "../icons/contacts.png"
 import {useLocation} from "react-router-dom";
 import WidgetContainer from "../components/widget_container/widget_container";
-
-// function MenuPage() {
-//     const {state} = useLocation();
-//     const {username} = state
-//     return(
-//         <>
-//             <Header username={username} topic="Willkommen" klasse="header"/>
-//             <DoubleBigButton icon1={user} icon2={file} title1="Mitarbeiterprofil" title2="Aufgaben" url1="profil" url2="tasks" />
-//             <DoubleBigButton icon1={upload} icon2={calendar} title1="Dokumente" title2="Kalender"  url1="documents" url2="calendar" />
-//             <DoubleBigButton icon1={letter} icon2={contacts} title1="Nachrichten" title2="Kontakte" url1="messages" url2="contacts" />
-//             <div className="greenLine" />
-//         </>
-//     )
-// }
+import Menu from "../components/menu/menu";
+import icon from "../user_related_data/users/lehmann_kevin/images/officer.png"
+import {useEffect, useState} from "react";
 
 function MenuPage() {
+
     const {state} = useLocation();
     const {username} = state
-    return(
+
+    useEffect(() => {
+        (async () => {
+            await fetch('http://localhost:3001/home', {
+                method: 'POST',
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    token: localStorage.getItem('token')
+                })
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    getTasks(data.task)
+                    getSchedule(data.schedule)
+                })
+        })()
+    }, [])
+
+    const [tasks, getTasks] = useState([])
+    const [schedules, getSchedule] = useState([])
+
+    return (
         <>
-            <Header username={username} topic="Willkommen" klasse="menu_header" />
-            <img src={user} alt="User-Icon" />
-            <WidgetContainer />
-            <WidgetContainer />
-            <WidgetContainer />
-            <div className="greenLine" />
+            <Header klasse="menu_header" />
+            <User username={username} />
+            <WidgetContainer topic="Aufgaben" elements={tasks} />
+            <WidgetContainer topic="Termine" elements={schedules}/>
+            <WidgetContainer topic="Nachrichten"/>
+            <Menu />
         </>
+    )
+}
+
+function User ({username}) {
+    return (
+        <table className="user-table">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src={icon} alt="User-Icon" className="user_icon"/>
+                    </td>
+                    <td  className="spacer_w3"/>
+                    <td>
+                        <div className="user-name">Willkommen</div>
+                        <div className="user-name"><b>{username}</b></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     )
 }
 

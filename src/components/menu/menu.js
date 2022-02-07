@@ -53,6 +53,28 @@ function Menu({active}) {
                         </div>
                     </>
                 )
+            } else {
+                newMenu(
+                    <>
+                        <div className="menu">
+                            <div className="tabIcon rightLine">
+                                <img src={icon} alt="" />
+                            </div>
+                            <div className="tabFile rightLine">
+                                <img src={file} alt="" />
+                            </div>
+                            <div className="tabCalendar rightLine">
+                                <img src={calendar} alt="" />
+                            </div>
+                            <div className="tabLetter rightLine">
+                                <img src={letter} alt="" />
+                            </div>
+                            <div className="tabContacts">
+                                <img src={contacts} alt="" />
+                            </div>
+                        </div>
+                    </>
+                )
             }
         })()
     }, [active])
