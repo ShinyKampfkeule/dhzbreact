@@ -1,35 +1,212 @@
-.tab {
-  width: 45px;
-  height: 45px;
-}
-
-.menu {
-  background-color: rgb(110, 170, 30);
-  width: 100%;
-  height: 80px;
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-}
-
-.main {
-}
-
-.menu_button {
-  background-color: rgba(130, 210, 240, 0);
-  border: none;
-  margin-right: 15px;
-  margin-top: 15px;
-}
-
-.menu_button_lastElement {
-  background-color: rgba(130, 210, 240, 0);
-  border: none;
-  margin-top: 15px;
+body {
+  font-family: "Bliss Pro";
 }
 
 .header {
   text-align: center;
+}
+
+.language-container {
+  position: fixed;
+  right: 6vw;
+  top: 3vh;
+  width: 73px;
+  border: solid black 1px;
+  border-radius: 5px;
+  height: 29px;
+}
+
+.image {
+  width: 62%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 10vh;
+}
+
+.impuls {
+  width: 100%;
+  height: 1%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.topic {
+  position: relative;
+  top: 16vh;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 0.5rem;
+}
+
+.icon {
+  width: 5px;
+  height: 5px;
+}
+
+.loginField {
+  background-color: rgba(130, 210, 240,0.25);
+  width: 82%;
+  height: 260px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  top: 16vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.abstand {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hinweisText {
+  text-align: center;
+  color: rgb(171, 171, 171);
+  position: fixed;
+  top: 85vh;
+  left: 22vw;
+  font-size: 0.8rem;
+}
+
+.greenLine {
+  background-color: rgb(110, 170, 30);
+  width: 100%;
+  height: 1vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  background-color: rgba(0, 110, 185);
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 82%;
+  height: 5.9vh;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 19vh;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.16);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.label {
+  display: block;
+  text-align: left;
+  margin-left: 28vw;
+  font-size: 1.1rem;
+}
+
+.input {
+  margin-top: 0.3vh;
+  margin-left: 27vw;
+  width: 64vw;
+  height: 5.2vh;
+  border: none;
+  border-radius: 5px;
+  padding-left: 13px;
+  font-size: 1rem;
+}
+
+.input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.password {
+  margin-top: 3vh;
+}
+
+.full {
+  width: 80%;
+  position: relative;
+  bottom: 1vh;
+}
+
+.eye {
+  width: 6vw;
+  height: 3vh;
+}
+
+.eyeContainer {
+  position: relative;
+  right: 28vw;
+  top: 12vh;
+  width: 30px;
+  margin: 0;
+}
+
+.ErrorContainer {
+  position: relative;
+  top: 19vh;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #ff0000;
+}
+
+.bigBlueButton {
+  background-color: rgba(0, 110, 185);
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 38.5vw;
+  height: 35vw;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 15vh;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.16);
+  margin-bottom: 2vh;
+}
+
+.topic_dash {
+  position: relative;
+  top: 12vh;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 0.5rem;
+}
+
+.btnText {
+  display: block;
+  position: relative;
+  top: 2vh;
+  font-size: 1rem;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+}
+
+.pwForgotten {
+  position: relative;
+  top: 11.5vh;
+  right: 38vw;
+}
+
+.pw {
+  width: 50vw;
+  color: rgb(126, 126, 126);
+}
+
+.topics {
+  position: relative;
+  top: 3vh;
+  font-size: 2.2rem;
+  text-align: center;
+  line-height: 0.5rem;
 }
 
 .checkbox {
@@ -37,34 +214,632 @@
   width: 20px;
   height: 20px;
   position: relative;
-  top: 15px;
-  left: 5px;
+  top: 20px;
+  left: 25px;
+}
+
+input[type="checkbox"]:disabled{
+  background-color: rgb(110, 170, 30);
 }
 
 .task_text {
-  font-size: 1rem;
+  font-size: 1.1rem;
   position: relative;
-  top: 11px;
-  left: 10px;
+  top: 15px;
+  left: 40px;
+}
+
+.task_text_checked {
+  font-size: 1.1rem;
+  position: relative;
+  top: 2.3vh;
+  left: 16vw;
 }
 
 .task_container {
   border: none;
-  background-color: rgba(130, 210, 240, 0.5);
+  background-color: rgba(130, 210, 240, 0.25);
   border-radius: 15px;
-  font-size: 1rem;
-  width: 90%;
-  height: 60px;
-  margin-bottom: 20px;
+  width: 83%;
+  height: 65px;
+  margin-bottom: 25px;
   position: relative;
+  top: 12vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.task_container_checked {
+  border: none;
+  background-color: rgba(110, 170, 30, 0.56);
+  border-radius: 15px;
+  width: 83%;
+  height: 65px;
+  margin-bottom: 25px;
+  position: relative;
+  top: 12vh;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.task_image {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 2.3vh;
+  left: 6vw;
+}
+
+.task_image_home {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 1vh;
+  left: 3vw;
+}
+
+.tabHome {
+  width: 78px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabHome > img {
+  width: 40px;
+  height: 36px;
+}
+
+.tabIcon {
+  width: 78px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabIcon > img {
+  width: 34px;
+  height: 36px;
+}
+
+.tabFile {
+  width: 78px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabFile > img {
+  width: 32px;
+  height: 41px;
+}
+
+.tabCalendar {
+  width: 78px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabCalendar > img {
+  width: 36px;
+  height: 41px;
+}
+
+.tabLetter {
+  width: 78px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabLetter > img {
+  width: 41px;
+  height: 28px;
+}
+
+.tabContacts {
+  width: 78px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabContacts > img {
+  width: 36px;
+  height: 41px;
+}
+
+.menu {
+  background-color: rgb(110, 170, 30);
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.rightLine {
+  border-right: 1px solid rgba(258, 258, 258, 0.5);
+}
+
+.container {
+  background-color: rgba(130, 210, 240, 0.25);
+  width: 78%;
+  border: none;
+  border-radius: 20px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  top: 5vh;
+  height: 72vh;
+  right: 0;
+}
+
+.everyElement {
+  position: relative;
+  top: -1vh;
+}
+
+.Geschlecht {
+  position: relative;
+  top: 8vh;
+  height: 5.7vh;
+  width: 40%;
+  left: -15vw;
+}
+
+.GeschlechtLabel {
+  position: relative;
+  top: 4vh;
+  left: 5vw;
+}
+
+.Geburtsdatum {
+  position: relative;
+  top: 2.3vh;
+  height: 5vh;
+  width: 40%;
+  left: 15vw;
+}
+
+.GeburtsdatumLabel {
+  position: relative;
+  top: -1.7vh;
+  left: 41vw;
+}
+
+.Titel {
+  position: relative;
+  top: 8vh;
+  height: 5vh;
+  width: 30%;
+  left: -3vw;
+}
+
+.TitelLabel {
+  position: relative;
+  top: 4vh;
+  left: 5.5vw;
+}
+
+.Vorname {
+  position: relative;
+  top: 2.8vh;
+  height: 5vh;
+  width: 46%;
+  left: 19vw;
+}
+
+.VornameLabel {
+  position: relative;
+  top: -1.2vh;
+  left: 35.5vw;
+}
+
+.Nachname {
+  position: relative;
+  top: 6vh;
+  height: 5vh;
+  width: 84%;
+  left: 5vw;
+}
+
+.NachnameLabel {
+  position: relative;
+  top: 6vh;
+  left: 6.5vw;
+}
+
+.Straße {
+  position: relative;
+  top: 12vh;
+  height: 5vh;
+  width: 54%;
+  left: -6vw;
+}
+
+.StraßeLabel {
+  position: relative;
+  top: 8vh;
+  left: 6.5vw;
+}
+
+.Nr {
+  position: relative;
+  top: 6.6vh;
+  height: 5vh;
+  width: 20%;
+  left: 49vw;
+}
+
+.NrLabel {
+  position: relative;
+  top: 2.7vh;
+  left: 56vw;
+}
+
+.Stadt {
+  position: relative;
+  top: 12vh;
+  height: 5vh;
+  width: 45%;
+  left: -4vw;
+}
+
+.StadtLabel {
+  position: relative;
+  top: 8vh;
+  left: 6vw;
+}
+
+.PLZ {
+  position: relative;
+  top: 6.6vh;
+  height: 5vh;
+  width: 28%;
+  left: 42vw;
+}
+
+.PLZLabel {
+  position: relative;
+  top: 2.6vh;
+  left: 50vw;
+}
+
+.Telefonnummer {
+  position: relative;
+  top: 10.5vh;
+  height: 5vh;
+  width: 84%;
+  left: 5.5vw;
+}
+
+.TelefonnummerLabel {
+  position: relative;
+  top: 10vh;
+  left: 6.5vw;
+}
+
+.horizontalLine {
+  width: 100%;
+  height: 0.2vh;
+  background-color: white;
+  position: relative;
+  top: 4vh;
+}
+
+.horizontalLine2 {
+  width: 100%;
+  height: 0.2vh;
+  background-color: white;
+  position: relative;
+  top: 4vh;
+}
+
+.horizontalLine3 {
+  width: 100%;
+  height: 0.2vh;
+  background-color: white;
+  position: relative;
+  top: 8vh;
+}
+
+.horizontalLine4 {
+  width: 100%;
+  height: 0.2vh;
+  background-color: white;
+  position: relative;
+  top: 8vh;
+}
+
+.horizontalLine5 {
+  width: 100%;
+  height: 0.2vh;
+  background-color: white;
+  position: relative;
+  top: 8vh;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  padding-left: 7px;
+}
+
+select {
+  border: none;
+  border-radius: 5px;
+  padding-left: 7px;
+}
+
+.activeTab {
+  background-color: rgb(0, 105, 30);
+  height: 100%;
+}
+
+.rightArrow {
+  position: relative;
+  width: 8vw;
+  height: 4vh;
+  top: -32.5vh;
+  left: 91vw;
+}
+
+.leftArrow {
+  position: relative;
+  width: 8vw;
+  height: 4vh;
+  top: -32.5vh;
+  left: -7vw;
+}
+
+.widget_container {
+  background-color: rgb(0, 110, 185);
+  height: 21vh;
+  width: 88%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16), inset 0 3px 6px 0 rgba(0,0,0,0.16);
+  border-radius: 5px;
+  top: 17vw;
+  margin-bottom: 1.5vh;
+}
+
+.menu_image {
+  width: 62%;
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  top: 5vh;
+}
+
+.user_icon {
+  width: 53px;
+  height: 53px;
+}
+
+.user-table {
+  position: relative;
+  top: 6.5vh;
+  left: 6vw;
+}
+
+.user-name {
+  font-size: 1.5rem;
+}
+
+.spacer_w3 {
+  width: 3vw;
+}
+
+.widget_task_container {
+  overflow-y: scroll;
+  position: relative;
+  height: 16vh;
+  top: 1vh;
+  -ms-overflow-style: none;
+}
+
+.widget_task_container::-webkit-scrollbar {
+  display: none;
+}
+
+.widget_task_design {
+  border: none;
+  background-color: rgb(130, 210, 240);
+  border-radius: 5px;
+  width: 93%;
+  height: 39px;
+  margin-bottom: 1vh;
+  position: relative;
+  top: 1vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.widget_task_checkbox {
+  border: 1px solid rgba(0, 0, 0, 1);
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 10px;
   left: 15px;
 }
 
-.language-container {
+.widget_task_text {
+  font-size: 1.2rem;
   position: relative;
-  right: 0;
-  width: 60px;
-  border: solid black 1px;
+  top: 7px;
+  left: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.widget_header {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  position: relative;
+  top: 1vh;
+  left: 1.5vh;
+}
+
+.widget_schedule {
+  background-color: rgb(176, 220, 118);
+  width: 93%;
+  height: 15.5vh;
   border-radius: 5px;
-  height: 30px;
+  position: relative;
+  top: 1.5vh;
+  left: 3vw;
+}
+
+.widget_schedule_day {
+  width: 15vw;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  top: 1vh;
+  left: 0.5vh;
+}
+
+.widget_schedule_day_wday {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+  color: rgb(83, 83, 83);
+}
+
+.widget_schedule_day_day {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.6rem;
+  color: rgb(83, 83, 83);
+}
+
+.widget_schedule_time_container {
+  width: 69.5%;
+  height: 85%;
+  position: relative;
+  left: 19vw;
+  bottom: 5.8vh;
+}
+
+.widget_schedule_timeline_time1 {
+  font-size: 0.8rem;
+  color: rgb(129, 161, 87);
+}
+
+.widget_schedule_timeline_time2 {
+  font-size: 0.8rem;
+  color: rgb(129, 161, 87);
+  position: relative;
+  top: 2.5vh;
+}
+
+.widget_schedule_timeline_time3 {
+  font-size: 0.8rem;
+  color: rgb(129, 161, 87);
+  position: relative;
+  top: 5.5vh;
+}
+
+.widget_schedule_timeline_line {
+  height: 13vh;
+  width: 0.2vw;
+  background-color: rgb(129, 161, 87);
+  position: relative;
+  bottom: 9vh;
+  left: 8vw;
+}
+
+.widget_schedule_scheduled {
+  position: relative;
+  bottom: 21vh;
+  left: 10vw;
+  font-size: 1rem;
+  color: rgb(83, 83, 83);
+  margin-bottom: 2vh;
+}
+
+.widget_schedule_scheduled_single {
+  position: relative;
+  bottom: 17.5vh;
+  left: 10vw;
+  font-size: 1rem;
+  color: rgb(83, 83, 83);
+  margin-bottom: 2vh;
+}
+
+.message_container {
+  background-color: rgb(255, 255, 255);
+  width: 93%;
+  height: 5.7vh;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+  top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.message_container::-webkit-scrollbar {
+  display: none;
+}
+
+.message_container_user_icon {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  top: 1.5vh;
+  left: 2.5vw;
+}
+
+.message_container_user_sender {
+  width: 50vw;
+  position: relative;
+  bottom: 2vh;
+  left: 12vw;
+  font-size: 0.8rem;
+}
+
+.message_container_user_reference {
+  width: 50vw;
+  position: relative;
+  bottom: 2vh;
+  left: 12vw;
+  font-size: 0.8rem;
+}
+
+.message_container_user_date {
+  width: 20vw;
+  position: relative;
+  bottom: 6vh;
+  left: 58vw;
+  font-size: 0.8rem;
+}
+
+.message_container_user_warn_icon {
+  position: relative;
+  left: 77vw;
+  bottom: 6.5vh;
+}
+
+.message_container_overflow {
+  overflow-y: scroll;
+  position: relative;
+  height: 15vh;
+  top: 2vh;
 }
