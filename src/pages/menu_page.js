@@ -1,5 +1,5 @@
 import Header from "../components/header/header"
-import {useLocation} from "react-router-dom";
+import {useLocation, useNavigate} from "react-router-dom";
 import WidgetContainer from "../components/widget_container/widget_container";
 import Menu from "../components/menu/menu";
 import icon from "../user_related_data/users/lehmann_kevin/images/officer.png"
@@ -26,20 +26,22 @@ function MenuPage() {
                 .then((data) => {
                     getTasks(data.task)
                     getSchedule(data.schedule)
+                    getMessage(data.messages)
                 })
         })()
     }, [])
 
     const [tasks, getTasks] = useState([])
     const [schedules, getSchedule] = useState([])
+    const [messages, getMessage] = useState([])
 
     return (
         <>
             <Header klasse="menu_header" />
             <User username={username} />
-            <WidgetContainer topic="Aufgaben" elements={tasks} />
-            <WidgetContainer topic="Termine" elements={schedules}/>
-            <WidgetContainer topic="Nachrichten"/>
+            <WidgetContainer topic="Aufgaben" elements={tasks} page="/tasks" />
+            <WidgetContainer topic="Termine" elements={schedules} page="/schedules" />
+            <WidgetContainer topic="Nachrichten" elements={messages} page="/messages" />
             <Menu />
         </>
     )
