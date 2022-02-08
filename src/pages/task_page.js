@@ -31,7 +31,7 @@ function TaskPage() {
         <>
             <Header topic="Aufgaben" />
             {tasks.length > 0
-                ? tasks.map(e => {return <Tasks text={e.title} checked={e.status} page="tasks" key={e.title}/>})
+                ? tasks.map(e => {return <Tasks text={e.title} checked={e.status} page="tasks" rePage={e.link}  key={e.title}/>})
             :null}
             <Menu active="tasks" />
         </>

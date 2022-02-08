@@ -1,5 +1,4 @@
 import Header from "../components/header/header"
-import {useLocation, useNavigate} from "react-router-dom";
 import WidgetContainer from "../components/widget_container/widget_container";
 import Menu from "../components/menu/menu";
 import icon from "../user_related_data/users/lehmann_kevin/images/officer.png"
@@ -7,8 +6,7 @@ import {useEffect, useState} from "react";
 
 function MenuPage() {
 
-    const {state} = useLocation();
-    const {username} = state
+    let username = localStorage.getItem('name')
 
     useEffect(() => {
         (async () => {
@@ -42,7 +40,7 @@ function MenuPage() {
             <WidgetContainer topic="Aufgaben" elements={tasks} page="/tasks" />
             <WidgetContainer topic="Termine" elements={schedules} page="/schedules" />
             <WidgetContainer topic="Nachrichten" elements={messages} page="/messages" />
-            <Menu />
+            <Menu active="home"/>
         </>
     )
 }

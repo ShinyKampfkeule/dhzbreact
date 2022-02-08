@@ -229,6 +229,13 @@ input[type="checkbox"]:disabled{
   left: 40px;
 }
 
+.task_text_checked {
+  font-size: 1.1rem;
+  position: relative;
+  top: 2.3vh;
+  left: 16vw;
+}
+
 .task_container {
   border: none;
   background-color: rgba(130, 210, 240, 0.25);
@@ -242,6 +249,49 @@ input[type="checkbox"]:disabled{
   margin-right: auto;
 }
 
+.task_container_checked {
+  border: none;
+  background-color: rgba(110, 170, 30, 0.56);
+  border-radius: 15px;
+  width: 83%;
+  height: 65px;
+  margin-bottom: 25px;
+  position: relative;
+  top: 12vh;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.task_image {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 2.3vh;
+  left: 6vw;
+}
+
+.task_image_home {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 1vh;
+  left: 3vw;
+}
+
+.tabHome {
+  width: 78px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabHome > img {
+  width: 40px;
+  height: 36px;
+}
+
 .tabIcon {
   width: 78px;
   height: 60px;
@@ -251,8 +301,8 @@ input[type="checkbox"]:disabled{
 }
 
 .tabIcon > img {
-  width: 41px;
-  height: 41px;
+  width: 34px;
+  height: 36px;
 }
 
 .tabFile {
@@ -303,8 +353,8 @@ input[type="checkbox"]:disabled{
 }
 
 .tabContacts > img {
-  width: 32px;
-  height: 36px;
+  width: 36px;
+  height: 41px;
 }
 
 .menu {
@@ -599,6 +649,11 @@ select {
   position: relative;
   height: 16vh;
   top: 1vh;
+  -ms-overflow-style: none;
+}
+
+.widget_task_container::-webkit-scrollbar {
+  display: none;
 }
 
 .widget_task_design {
@@ -626,9 +681,9 @@ select {
 .widget_task_text {
   font-size: 1.2rem;
   position: relative;
-  top: 9px;
+  top: 7px;
   left: 20px;
-  color: rgb(0, 48, 79);
+  color: rgb(0, 0, 0);
 }
 
 .widget_header {
@@ -740,6 +795,10 @@ select {
   margin-bottom: 1vh;
 }
 
+.message_container::-webkit-scrollbar {
+  display: none;
+}
+
 .message_container_user_icon {
   width: 26px;
   height: 26px;
@@ -784,16 +843,3 @@ select {
   height: 15vh;
   top: 2vh;
 }
-
-/*.menu_button {*/
-/*  background-color: rgba(130, 210, 240, 0);*/
-/*  border: none;*/
-/*  margin-right: 15px;*/
-/*  margin-top: 15px;*/
-/*}*/
-
-/*.menu_button_lastElement {*/
-/*  background-color: rgba(130, 210, 240, 0);*/
-/*  border: none;*/
-/*  margin-top: 15px;*/
-/*}*/

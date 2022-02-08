@@ -36,11 +36,8 @@ function Login() {
                                 error.innerText = message
                             } else {
                                 localStorage.setItem('token', data.token)
-                                navigate(`/home`, {
-                                    state: {
-                                        username: data.username
-                                    }
-                                })
+                                localStorage.setItem('name', data.username)
+                                navigate(`/home`)
                             }
                         })
                 }}
@@ -54,7 +51,7 @@ function Login() {
                             <Field type="password" id="password" name="password" placeholder="" className="input" />
                         </div>
                         <div className="pwForgotten">
-                            <p className="pw">Passwort vergessen?</p>
+                            <p className="pw" onClick={e => navigate("/pwForgotten")}>Passwort vergessen?</p>
                         </div>
                         <div className="eyeContainer" id="hide" onClick={changePasswordVisibility}>
                             <img src={eye} className="eye" id="eye" alt=""/>
